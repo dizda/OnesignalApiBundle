@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="dizda_onesignal_api.service.config" class="OneSignal\Config" public="false">
+            <call method="setApplicationId">
+                <argument>%dizda_onesignal_api.app_id%</argument>
+            </call>
+            <call method="setApplicationAuthKey">
+                <argument>%dizda_onesignal_api.app_auth_key%</argument>
+            </call>
+        </service>
+
+        <service id="dizda_onesignal_api.service.client" class="OneSignal\OneSignal">
+            <argument type="service" id="dizda_onesignal_api.service.config" />
+        </service>
+    </services>
+</container>
