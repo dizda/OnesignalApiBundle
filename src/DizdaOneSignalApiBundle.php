@@ -1,9 +1,9 @@
 <?php
 
-namespace Dizda\OneSignalApiBundle;
+namespace Dizda\OnesignalApiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class DizdaOneSignalApiBundle extends Bundle
+class DizdaOnesignalApiBundle extends Bundle
 {
 }

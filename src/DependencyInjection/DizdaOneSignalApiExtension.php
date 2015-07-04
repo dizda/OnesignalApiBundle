@@ -1,6 +1,6 @@
 <?php
 
-namespace Dizda\OneSignalApiBundle\DependencyInjection;
+namespace Dizda\OnesignalApiBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class DizdaOneSignalApiExtension extends Extension
+class DizdaOnesignalApiExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -28,5 +28,6 @@ class DizdaOneSignalApiExtension extends Extension
         foreach ($config as $k => $v) {
             $container->setParameter('dizda_onesignal_api.' . $k, $v);
         }
+        var_dump($config);
     }
 }

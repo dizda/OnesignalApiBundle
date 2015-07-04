@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dizda\\OneSignalApiBundle\\": "src"
+      "Dizda\\OnesignalApiBundle\\": "src"
     }
   },
   "minimum-stability": "dev"

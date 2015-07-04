@@ -1,4 +1,4 @@
-OneSignalApiBundle
+OnesignalApiBundle
 ========================
 
 Integrate OneSignal API in Symfony with ease.

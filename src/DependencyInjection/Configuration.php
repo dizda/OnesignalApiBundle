@@ -1,6 +1,6 @@
 <?php
 
-namespace Dizda\OneSignalApiBundle\DependencyInjection;
+namespace Dizda\OnesignalApiBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -22,8 +22,8 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('app_id')->defaultNull()->end()
-                ->scalarNode('app_auth_key')->defaultNull()->end()
+                ->scalarNode('app_id')->end()
+                ->scalarNode('app_auth_key')->end()
             ->end()
         ;
 
