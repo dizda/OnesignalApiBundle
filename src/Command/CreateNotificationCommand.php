@@ -39,6 +39,17 @@ EOF
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $client = $this->getContainer()->get('dizda_onesignal_api.service.client');
-        var_dump($client);
+        $client->notifications->add([
+            'headings' => [
+                'en' => 'Withdraw'
+            ],
+            'contents' => [
+                'en' => 'Your withdraw has been sent!'
+            ],
+            'include_player_ids' => ['6de78980-2297-11e5-ae29-43aa3272e73b'],
+//            'included_segments' => ['All'],
+//            'data' => ['foo' => 'bar'],
+            'url' => 'http://bitter.io/privacy'
+        ]);
     }
 }

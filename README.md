@@ -21,6 +21,25 @@ dizda_onesignal_api:
     app_auth_key: %onesignal_app_auth_key%
 ```
 
+## Use
+
+Send a simple notification:
+
+```php
+$client = $this->get('dizda_onesignal_api.service.client');
+
+$client->notifications->add([
+    'headings' => [
+        'en' => 'Withdraw'
+    ],
+    'contents' => [
+        'en' => 'Your withdraw has been sent!'
+    ],
+    'included_segments' => ['All'],
+    'url' => 'http://google.fr'
+]);
+```
+
 ## License
 
 MIT Licensed, see LICENSE.
