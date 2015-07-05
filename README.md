@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/dizda/onesignal-api-bundle/v/stable)](https://packagist.org/packages/dizda/onesignal-api-bundle) [![Total Downloads](https://poser.pugx.org/dizda/onesignal-api-bundle/downloads)](https://packagist.org/packages/dizda/onesignal-api-bundle) [![Latest Unstable Version](https://poser.pugx.org/dizda/onesignal-api-bundle/v/unstable)](https://packagist.org/packages/dizda/onesignal-api-bundle) [![License](https://poser.pugx.org/dizda/onesignal-api-bundle/license)](https://packagist.org/packages/dizda/onesignal-api-bundle)
+
 OnesignalApiBundle
 ========================
 
