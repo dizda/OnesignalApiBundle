@@ -28,6 +28,5 @@ class DizdaOnesignalApiExtension extends Extension
         foreach ($config as $k => $v) {
             $container->setParameter('dizda_onesignal_api.' . $k, $v);
         }
-        var_dump($config);
     }
 }
