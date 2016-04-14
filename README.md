@@ -12,6 +12,16 @@ Use the [PHP library made by Norkunas](https://github.com/norkunas/onesignal-php
 Install with Composer
 
     composer require dizda/onesignal-api-bundle
+    
+Add bundle to app/AppKernel.php
+
+    public function registerBundles()
+    {
+        $bundles = array(
+            ....
+            new Dizda\OnesignalApiBundle\DizdaOnesignalApiBundle()
+        );
+    }
 
 ## Configuration
 
