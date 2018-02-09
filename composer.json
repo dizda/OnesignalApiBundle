@@ -13,9 +13,9 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0",
-    "symfony/framework-bundle": "~2.3",
-    "norkunas/onesignal-php-api": "v0.1.0"
+    "php": ">=5.4.0 || ^7.0",
+    "symfony/framework-bundle": "~2.3 || ^3.0",
+    "norkunas/onesignal-php-api": "^0.1"
   },
   "require-dev": {
   },
